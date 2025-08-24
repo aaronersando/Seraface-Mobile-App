@@ -14,6 +14,7 @@ export default {
     },
     ios: {
       supportsTablet: true,
+      bundleIdentifier: "com.agersando.SerafaceMobile",
     },
     android: {
       adaptiveIcon: {
@@ -21,11 +22,18 @@ export default {
         backgroundColor: "#f5d0f1",
       },
       edgeToEdgeEnabled: true,
+      package: "com.agersando.SerafaceMobile",
     },
     web: {
       favicon: "./assets/favicon.png",
       bundler: "metro",
     },
     plugins: ["expo-font"],
+    extra: {
+      eas: {
+        projectId: "0ad10560-7096-478b-b186-536c54b4f8b8",
+      },
+    },
+    scheme: "serafacemobile",
   },
 };
